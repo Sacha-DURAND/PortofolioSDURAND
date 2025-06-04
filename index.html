@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sacha DURAND</title>
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+</head>
+<body>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".progress").forEach(bar => {
+        bar.style.width = bar.dataset.progress + "%";
+      });
+    });
+  </script>
+
+  <nav>
+    <ul>
+      <li class="logo"><a href="Main.html">Sacha DURAND</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#timeline">Parcours et Diplômes</a></li>
+      <li class="deroulant">
+        <a href="#projets">Projet</a>
+        <ul class="sous">
+          <li><a href="#">projet 1</a></li>
+          <li><a href="#">projet 2</a></li>
+          <li><a href="#">projet 3</a></li>
+          <li><a href="#">projet 4</a></li>
+        </ul>
+      </li>
+      <li><a href="Assets/Fichiers/Sacha_DURAND_CV.pdf" target="_blank" class="cv-button">📄 Télécharger le CV</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <img src="Assets/Images/moi.jpg" alt="Sacha DURAND">
+    <h1>Sacha DURAND</h1>
+    <p class="subtitle">Étudiant en informatique</p>
+  </header>
+  <section class="intro">
+  <article class="intro-card">
+    <h2>Présentation</h2>
+    <p><strong>Nom :</strong> Sacha DURAND</p>
+    <p><strong>Poste :</strong> Étudiant en informatique</p>
+    <p><strong>Localisation :</strong> Lannion, France : IUT de Lannion</p>
+    <p><strong>Email :</strong> <a href="mailto:sacha.durand971@gmail.com">sacha.durand971@gmail.com</a></p>
+    <a href="Assets/Fichiers/Sacha_DURAND_CV.pdf" target="_blank" class="cv-button">📄 Télécharger le CV</a>
+  </article>
+  </section>
+
+
+<section class="skills" id="skills">
+  <h2>Compétences</h2>
+
+  <h3>Programmation</h3>
+  <ul>
+<li><span>Python</span><div class="progress-container"><div class="progress" data-progress="80">80%</div></div></li>
+<li><span>C</span><div class="progress-container"><div class="progress" data-progress="70">70%</div></div></li>
+<li><span>C++</span><div class="progress-container"><div class="progress" data-progress="50">50%</div></div></li>
+<li><span>Java</span><div class="progress-container"><div class="progress" data-progress="70">70%</div></div></li>
+
+  </ul>
+
+  <h3>Développement Web</h3>
+  <ul>
+<li><span>HTML</span><div class="progress-container"><div class="progress" data-progress="85">85%</div></div></li>
+<li><span>CSS</span><div class="progress-container"><div class="progress" data-progress="75">75%</div></div></li>
+<li><span>JavaScript</span><div class="progress-container"><div class="progress" data-progress="20">20%</div></div></li>
+
+  </ul>
+
+  <h3>Outils</h3>
+  <ul>
+<li><span>Github</span><div class="progress-container"><div class="progress" data-progress="40">40%</div></div></li>
+<li><span>Linux</span><div class="progress-container"><div class="progress" data-progress="60">60%</div></div></li>
+<li><span>PostgreSQL</span><div class="progress-container"><div class="progress" data-progress="50">50%</div></div></li>
+  </ul>
+</section>
+
+
+  <section id="timeline" class="timeline">
+    <h2>Parcours et Diplômes</h2>
+    <article>
+      <time>2024 - Aujourd'hui</time>
+      <h3>BUT Informatique</h3>
+      <p>IUT de Lannion</p>
+    </article>
+    <article>
+      <time>Octobre 2024</time>
+      <h3>Certification GOOGLE Ateliers Numériques</h3>
+      <p>Formation sur le commerce digital et la vente en ligne</p>
+    </article>
+    <article>
+      <time>2023 - 2024</time>
+      <h3>Baccalauréat Général</h3>
+      <p>Spécialités Art et NSI, option Maths Complémentaires – Mention Bien</p>
+      <p>Lycée Yves Leborgne, Guadeloupe (971)</p>
+    </article>
+  </section>
+
+  <section id="projets" class="projects">
+    <h2>Projets</h2>
+    <ul class="gallery">
+      <li class="project-card">
+        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
+        <div class="project-info">
+          <h3>Jeu de Snake</h3>
+          <p>Développement d'un jeu Snake en C sur la console avec score et gestion des collisions.</p>
+          <p><strong>Langages :</strong> C | <strong>Compétences :</strong> logique de programmation, gestion mémoire</p>
+          <a href="Assets/Fichiers/SnakeConsole.c" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
+        </div>
+      </li>
+      <li class="project-card">
+        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
+        <div class="project-info">
+          <h3>Snake autonome</h3>
+          <p>Jeu Snake autonome en C qui évite les obstacles grâce à une IA simple.</p>
+          <p><strong>Langages :</strong> C | <strong>Compétences :</strong> algorithmes, intelligence artificielle basique</p>
+          <a href="Assets/Projets/snake.zip" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
+        </div>
+      </li>
+      <li class="project-card">
+        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
+        <div class="project-info">
+          <h3>Projet Docker</h3>
+          <p>Containerisation et déploiement d’applications avec Docker.</p>
+          <p><strong>Langages :</strong> Dockerfile, Bash | <strong>Compétences :</strong> conteneurisation, automatisation</p>
+          <a href="https://github.com/AsgArthur/siteJO.git" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
+        </div>
+      </li>
+      <li class="project-card">
+        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
+        <div class="project-info">
+          <h3>Modélisation de diagramme de classes</h3>
+          <p>Conception et modélisation UML des diagrammes de classes pour un projet logiciel.</p>
+          <p><strong>Outils :</strong> UML | <strong>Compétences :</strong> modélisation, analyse système</p>
+          <a href="Assets/Projets/diagrammes.zip" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+
+
+
+  <footer id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : sacha.durand971@gmail.com</p>
+    <p>Téléphone : 07 60 23 65 30</p>
+  </footer>
+</body>
+</html>
