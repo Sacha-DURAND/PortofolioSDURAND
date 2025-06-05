@@ -42,20 +42,7 @@ nav a:hover {
   color: #fff;
 }
 
-.deroulant > a::after {
-  content: " ▼";
-  font-size: 12px;
-}
 
-.sous {
-  display: none;
-  position: absolute;
-  background: #2d2d44;
-  color: #fff;
-  width: 100%;
-  top: 100%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
 
 nav li:hover .sous {
   display: block;
@@ -337,4 +324,25 @@ footer p {
     transform: translateY(30px);
     opacity: 0;
   }
+}
+
+
+
+.badge-en-cours {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffae00;
+  color: #1e1e2f;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+
+.project-card, .timeline article {
+  position: relative;
 }
