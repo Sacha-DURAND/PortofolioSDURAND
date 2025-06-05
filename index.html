@@ -19,15 +19,8 @@
       <li class="logo"><a href="Main.html">Sacha DURAND</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#timeline">Parcours et Diplômes</a></li>
-      <li class="deroulant">
-        <a href="#projets">Projet</a>
-        <ul class="sous">
-          <li><a href="#">projet 1</a></li>
-          <li><a href="#">projet 2</a></li>
-          <li><a href="#">projet 3</a></li>
-          <li><a href="#">projet 4</a></li>
-        </ul>
-      </li>
+      <li ><a href="#projets">Projets</a></li>
+      <li ><a href="#projetspersos">Projets Personnels</a></li>
       <li><a href="Assets/Fichiers/Sacha_DURAND_CV.pdf" target="_blank" class="cv-button">📄 Télécharger le CV</a></li>
     </ul>
   </nav>
@@ -45,6 +38,10 @@
     <p><strong>Localisation :</strong> Lannion, France : IUT de Lannion</p>
     <p><strong>Email :</strong> <a href="mailto:sacha.durand971@gmail.com">sacha.durand971@gmail.com</a></p>
     <a href="Assets/Fichiers/Sacha_DURAND_CV.pdf" target="_blank" class="cv-button">📄 Télécharger le CV</a>
+    <p>Actuellement étudiant en BUT Informatique à l’IUT de Lannion, je découvre chaque jour un peu plus le monde passionnant du développement. 
+      J’aime apprendre en pratiquant, créer des projets concrets et tester de nouvelles idées. Je suis à la recherche d’un stage ou d’une alternance 
+      pour continuer à progresser dans un environnement professionnel et mettre en pratique ce que j’ai appris. Ce site sert ici de présentation 
+      de mes compétences, mes projets académiques et personnels ainsi que mon parcours.</p>
   </article>
   </section>
 
@@ -81,6 +78,7 @@
   <section id="timeline" class="timeline">
     <h2>Parcours et Diplômes</h2>
     <article>
+      <span class="badge-en-cours">En cours</span>
       <time>2024 - Aujourd'hui</time>
       <h3>BUT Informatique</h3>
       <p>IUT de Lannion</p>
@@ -98,49 +96,108 @@
     </article>
   </section>
 
-  <section id="projets" class="projects">
-    <h2>Projets</h2>
-    <ul class="gallery">
-      <li class="project-card">
-        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
-        <div class="project-info">
-          <h3>Jeu de Snake</h3>
-          <p>Développement d'un jeu Snake en C sur la console avec score et gestion des collisions.</p>
-          <p><strong>Langages :</strong> C | <strong>Compétences :</strong> logique de programmation, gestion mémoire</p>
-          <a href="Assets/Fichiers/SnakeConsole.c" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
-        </div>
-      </li>
-      <li class="project-card">
-        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
-        <div class="project-info">
-          <h3>Snake autonome</h3>
-          <p>Jeu Snake autonome en C qui évite les obstacles grâce à une IA simple.</p>
-          <p><strong>Langages :</strong> C | <strong>Compétences :</strong> algorithmes, intelligence artificielle basique</p>
-          <a href="Assets/Projets/snake.zip" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
-        </div>
-      </li>
-      <li class="project-card">
-        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
-        <div class="project-info">
-          <h3>Projet Docker</h3>
-          <p>Containerisation et déploiement d’applications avec Docker.</p>
-          <p><strong>Langages :</strong> Dockerfile, Bash | <strong>Compétences :</strong> conteneurisation, automatisation</p>
-          <a href="https://github.com/AsgArthur/siteJO.git" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
-        </div>
-      </li>
-      <li class="project-card">
-        <figure style="background-image:url('Assets/Images/pointe_des_chateaux.jpg')"></figure>
-        <div class="project-info">
-          <h3>Modélisation de diagramme de classes</h3>
-          <p>Conception et modélisation UML des diagrammes de classes pour un projet logiciel.</p>
-          <p><strong>Outils :</strong> UML | <strong>Compétences :</strong> modélisation, analyse système</p>
-          <a href="Assets/Projets/diagrammes.zip" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
-        </div>
-      </li>
+<section id="projets" class="projects">
+  <h2>Projets</h2>
+  <ul class="gallery">
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/snake.png')"></figure>
+      <div class="project-info">
+        <h3>Jeu de Snake</h3>
+        <p>Développement d’un jeu Snake en C dans la console, avec gestion des collisions, score et interface utilisateur basique.</p>
+        <p><strong>Langages :</strong> C | <strong>Compétences :</strong> logique de programmation, gestion mémoire, structures de données</p>
+        <a href="Assets/Fichiers/SnakeConsole.c" target="_blank" download class="btn-download">⬇ Télécharger le projet</a>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/snakeIA.png')"></figure>
+      <div class="project-info">
+        <h3>Snake autonome</h3>
+        <p>Création d’un jeu Snake autonome en C, contrôlé par une IA simple qui anticipe les mouvements pour éviter les obstacles.</p>
+        <p><strong>Langages :</strong> C | <strong>Compétences :</strong> IA basique, algorithmes, logique de programmation</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/docker.png')"></figure>
+      <div class="project-info">
+        <h3>Projet Docker</h3>
+        <p>Containerisation et déploiement d’une application web à l’aide de Docker et GitHub.</p>
+        <p><strong>Langages :</strong> HTML, CSS, JavaScript | <strong>Compétences :</strong> Intégration web, Docker, Git/GitHub, Responsive design</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/JO.png')"></figure>
+      <div class="project-info">
+        <h3>Site Web JOs 2025</h3>
+        <p>Création d’un site fictif autour des JOs 2025 à Paris, avec une thématique centrée sur la natation.</p>
+        <p><strong>Langages :</strong> HTML, CSS, JavaScript | <strong>Compétences :</strong> maquettage, responsive design, accessibilité</p>
+        <a href="https://github.com/AsgArthur/siteJO.git" target="_blank" class="btn-download">⬇ Télécharger le projet</a>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/diagramme.png')"></figure>
+      <div class="project-info">
+        <h3>Modélisation UML</h3>
+        <p>Conception de diagrammes de classes UML dans le cadre d’une étude de système logiciel.</p>
+        <p><strong>Outils :</strong> UML | <strong>Compétences :</strong> modélisation, analyse système</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/')"></figure>
+      <div class="project-info">
+        <h3>Algorithmes KNN et K-Means</h3>
+        <p>Implémentation manuelle des algorithmes de classification KNN et de clustering K-Means pour l’analyse de données.</p>
+        <p><strong>Langages :</strong> Python | <strong>Compétences :</strong> algorithmie, mathématiques, machine learning</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/')"></figure>
+      <div class="project-info">
+        <h3>Base de données PostgreSQL</h3>
+        <p>Conception et exploitation d’une base de données relationnelle avec PostgreSQL (création, requêtes, jointures).</p>
+        <p><strong>Outils :</strong> PostgreSQL | <strong>Compétences :</strong> SQL, modélisation relationnelle, gestion de base de données</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/reseau.png')"></figure>
+      <div class="project-info">
+        <h3>Installation de services réseau</h3>
+        <p>Mise en place d’un site web dynamique avec zones sécurisées, incluant l'installation d’un serveur web, base de données, et langages côté serveur.</p>
+        <p><strong>Outils :</strong> Apache, MySQL, PHP | <strong>Compétences :</strong> configuration réseau, sécurité, développement back-end</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/javafx.png')"></figure>
+      <div class="project-info">
+        <h3>Développement d’une application Java</h3>
+        <p>Conception d’une application Java à partir du cahier des charges d’une entreprise, avec interface utilisateur basique.</p>
+        <p><strong>Langages :</strong> Java | <strong>Compétences :</strong> POO, modélisation, développement logiciel</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
-    </ul>
-  </section>
-
+<section id="projetspersos" class="projects">
+  <h2>Projets Personnels</h2>
+  <ul class="gallery">
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/FastCar.png')"></figure>
+      <div class="project-info">
+        <h3>Jeu de Voiture 2D</h3>
+        <p>Création d’un jeu de voiture en C++ avec Raylib, où le joueur conduit à contre-sens sur une route de campagne tout en évitant les obstacles.</p>
+        <p><strong>Langages :</strong> C++ | <strong>Compétences :</strong> programmation orientée objet, gestion mémoire, moteur graphique Raylib</p>
+      </div>
+    </li>
+    <li class="project-card">
+      <figure style="background-image:url('Assets/Images/CorsaireCalcul.png')"></figure>
+      <span class="badge-en-cours">En cours</span>
+      <div class="project-info">
+        <h3>Corsaire Calcul - Jeu de Mathématiques</h3>
+        <p>Développement d’un jeu éducatif pour enfants sur le thème des pirates, avec plusieurs niveaux pour apprendre les opérations de base (addition, multiplication, soustraction).</p>
+        <p><strong>Langages :</strong> C++ | <strong>Compétences :</strong> gamification, logique de programmation, design pédagogique</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
 
 
